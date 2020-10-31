@@ -15,11 +15,11 @@ public class King extends ChessPiece{
 	public String toString() {
 		return "K";
 	}
-
 	private boolean canMove(Position position) {
 		ChessPiece p = (ChessPiece) getBoard().piece(position);
 		return p == null || p.getColor() != this.getColor();
 	}
+
 	
 	@Override
 	public boolean[][] possibleMoves() {
